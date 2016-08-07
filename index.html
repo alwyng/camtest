@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>camtest</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1"/>
+		<script type="text/javascript" charset="utf-8" src="js/phonegap.js"></script>
+		<script src="js/cam.js"></script>
+	</head>
+	<body> 
+		<button onclick="capturePhotoWithData();">Capture Photo With Image Data</button> <br>
+		<button onclick="capturePhotoWithFile();">Capture Photo With Image File URI</button> <br>
+		<button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
+		<button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>
+		<img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+		<img style="display:none;" id="largeImage" src="" />
+
+	</body>
+</html>
