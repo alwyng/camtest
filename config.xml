@@ -1,18 +1,16 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 
-<widget xmlns = "http://www.w3.org/ns/widgets" 
-   xmlns:gap = "http://phonegap.com/ns/1.0" id = "com.appdev.onlineviewer" version = "1.0">
+<widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0" id = "com.appdev.onlineviewer" version = "1.0">
    
    <name>camtest</name>
    
    <description>
-      A tester for phonegap camera
+      camtest
    </description>
    
    <author href = "http://www.dontknowyet.co.za" email = "alwyn.grobler@gmail.com">
       Appdev
    </author>
-   
    
    <preference name = "permissions" value = "none"/>
    
@@ -50,13 +48,13 @@
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
     <gap:plugin name="org.apache.cordova.vibration" />
-	<plugin name="com.badrit.emailcomposer" spec="0.1.0" source="pgb" />
+	<gap:plugin name="cordova-plugin-email-composer" version="0.8.3" source="npm" />
+	<gap:plugin name="com.badrit.emailcomposer" spec="0.1.0" source="pgb" />
 	
 	<plugin name="cordova-plugin-whitelist"      source="npm" spec="1.1.0" />
 	<allow-navigation href="*" />
 	<allow-intent href="*" />
 	<access origin="*" /> <!-- Required for iOS9 -->
-
 
    
    <icon src = "res/icon/android/mipmap-ldpi/ic_launcher.png" 
@@ -79,6 +77,5 @@
    <icon src = "res/icon/ios/icon-72.png" gap:platform = "ios" width = "72" height = "72" />
    <icon src = "res/icon/ios/icon-57-2x.png" gap:platform = "ios" width = "114" height = "114" />
    <icon src = "res/icon/ios/icon-72-2x.png" gap:platform = "ios" width = "144" height = "144" />
-   
    
 </widget>
