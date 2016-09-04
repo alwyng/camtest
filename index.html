@@ -13,11 +13,17 @@
 			//output image to screen
 				cameraPic.src = "data:image/jpeg;base64," + data;
 			}
+			
+			function test(){
+				alert("test start");
+				window.plugins.EmailComposer.showEmailComposerWithCallback(null,"Look at this photo","Take a look at <b>this<b/>:",["alwyn.grobler@gmail.com"],[],[],true,[]);
+				alert("test end");
+			}
 		</script>
 	</head>
 	<body> 
 		<div id="camera">
-			<button class="camera-control" onclick="capturePhoto();">Capture Photo</button>
+			<button class="camera-control" onclick="test();">mail</button>
 		 
 			<div style="text-align:center;margin:20px;">
 				<img id="cameraPic" src="" style="width:auto;height:120px;"></img>
